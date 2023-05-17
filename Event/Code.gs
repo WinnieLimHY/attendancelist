@@ -9,7 +9,7 @@ function include(filename){
 function processForm(formObject){
   var url="/Paste your google sheets url at here/";
   var ss=SpreadsheetApp.openByUrl(url);
-  var ws=ss.getSheetByName("UserList");
+  var ws=ss.getSheetByName("/Enter your sheet name/");
   var qrCodeUrl = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + formObject.phoneno;
 
   ws.appendRow([
