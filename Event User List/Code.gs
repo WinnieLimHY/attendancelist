@@ -5,7 +5,7 @@ function doGet() {
 }
 
 function getTableData() {
-  var sheet = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/10EfSdCJGQnG_PNxq2E8Dc2GipTvG4CM04Zazf5Pmvdc/edit#gid=0').getSheetByName("UserList");
+  var sheet = SpreadsheetApp.openByUrl('/Paste your google sheets url at here/').getSheetByName("/Enter the sheet name/");
   var range = sheet.getRange("A:H");
   var values = range.getValues();
   var data = [];
