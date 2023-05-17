@@ -7,7 +7,7 @@ function include(filename){
 }
 
 function processForm(formObject){
-  var url="https://docs.google.com/spreadsheets/d/10EfSdCJGQnG_PNxq2E8Dc2GipTvG4CM04Zazf5Pmvdc/edit#gid=0";
+  var url="/Paste your google sheets url at here/";
   var ss=SpreadsheetApp.openByUrl(url);
   var ws=ss.getSheetByName("UserList");
   var qrCodeUrl = "https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" + formObject.phoneno;
